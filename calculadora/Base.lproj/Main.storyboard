@@ -21,9 +21,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpk-Un-SMK" userLabel="Contenedor">
                                 <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
-                                        <rect key="frame" x="10" y="50" width="355" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
+                                        <rect key="frame" x="10" y="50" width="355" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="SIQ-3f-keI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -88,7 +91,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-DE-zym">
                                                         <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="X">
+                                                        <buttonConfiguration key="configuration" style="filled" title="x">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -200,13 +203,17 @@
                                                         <buttonConfiguration key="configuration" style="filled" title=".">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RTu-PR-I0p"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ8-Sr-tcR">
                                                         <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="--">
-                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="filled" title="⌫"/>
+                                                        <connections>
+                                                            <action selector="deleteLastCharacter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHG-i2-JMT"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ur3-4k-pXG">
                                                         <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
@@ -223,15 +230,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="4cK-Ax-eWw"/>
-                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="50" id="51I-CF-hLG"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="50" id="Jyr-le-eQV"/>
-                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="MTQ-gN-eFB"/>
                                     <constraint firstAttribute="trailing" secondItem="Yft-pP-Mbn" secondAttribute="trailing" constant="10" id="NST-lz-vj1"/>
+                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="OGL-Jg-Hd2"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="Qgp-Ek-d7n"/>
                                     <constraint firstItem="Yft-pP-Mbn" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="Yr5-hc-Yde"/>
                                     <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="bqw-uS-5sN"/>
-                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="hvF-7g-zyl"/>
-                                    <constraint firstAttribute="trailing" secondItem="LVX-Mx-eu6" secondAttribute="trailing" constant="10" id="pXj-tk-bTA"/>
+                                    <constraint firstAttribute="trailing" secondItem="LVX-Mx-eu6" secondAttribute="trailing" constant="10" id="jYY-2E-QVv"/>
                                 </constraints>
                             </view>
                         </subviews>
