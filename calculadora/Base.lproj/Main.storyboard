@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,172 +15,205 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculadora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpk-Un-SMK" userLabel="Contenedor">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
-                                        <rect key="frame" x="10" y="50" width="394" height="90"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
+                                        <rect key="frame" x="10" y="50" width="355" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-pP-Mbn" userLabel="Botones Stack View">
-                                        <rect key="frame" x="10" y="643" width="394" height="175"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-pP-Mbn" userLabel="Botones Stack View">
+                                        <rect key="frame" x="10" y="347.66666666666674" width="355" height="333.33333333333326"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-0P-CKw" userLabel="Fila 1 Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="54.666666666666664"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-OO-KRC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="AC"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="AC">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="clearCapturaLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11F-h1-ooZ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-qK-L8X">
-                                                        <rect key="frame" x="201" y="0.0" width="193" height="31"/>
+                                                        <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="%"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="%">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nlH-te-cmF" userLabel="Fila 2 Stack View">
-                                                <rect key="frame" x="0.0" y="36" width="394" height="31"/>
+                                                <rect key="frame" x="0.0" y="69.666666666666629" width="355" height="54.666666666666657"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-Sa-bm4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-Sa-bm4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="7">
-                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fM2-CE-S8L"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-pA-xyO">
-                                                        <rect key="frame" x="101" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-pA-xyO">
+                                                        <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="8"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="8">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFq-iR-P6b"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr4-CC-PZI">
-                                                        <rect key="frame" x="202" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr4-CC-PZI">
+                                                        <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="9"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="9">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icF-za-tAS"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-DE-zym">
-                                                        <rect key="frame" x="303" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="X">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Bk-YF-aTc" userLabel="Fila 3 Stack View">
-                                                <rect key="frame" x="0.0" y="72" width="394" height="31"/>
+                                                <rect key="frame" x="0.0" y="139.33333333333331" width="355" height="54.666666666666657"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-nX-7NI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-nX-7NI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="4">
                                                             <backgroundConfiguration key="background" imageContentMode="center">
                                                                 <imageReference key="image" image="1.square.fill" catalog="system" symbolScale="large"/>
                                                             </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKr-ig-d7R"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arS-c9-263">
-                                                        <rect key="frame" x="101" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arS-c9-263">
+                                                        <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="5"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="5">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUZ-hf-g6n"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s8-Gl-qWH">
-                                                        <rect key="frame" x="202" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s8-Gl-qWH">
+                                                        <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="6"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="6">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e15-Vb-wu2"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDA-ym-PT3">
-                                                        <rect key="frame" x="303" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="-"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="-">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gKQ-Jh-CNA" userLabel="Fila 4 Stack View">
-                                                <rect key="frame" x="0.0" y="108" width="394" height="31"/>
+                                                <rect key="frame" x="0.0" y="208.99999999999994" width="355" height="54.666666666666686"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4R-7M-fuq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4R-7M-fuq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="1"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="1">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9x-f3-hAt"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-gJ-qwb">
-                                                        <rect key="frame" x="101" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-gJ-qwb">
+                                                        <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="2"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="2">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcV-bY-UZG"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-ty-7ze">
-                                                        <rect key="frame" x="202" y="0.0" width="91" height="31"/>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-ty-7ze">
+                                                        <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="3"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="3">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QL-5Q-zyw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jv-pP-Y5a">
-                                                        <rect key="frame" x="303" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="+"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="+">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Dn-Sc6" userLabel="Fila 5 Stack View">
-                                                <rect key="frame" x="0.0" y="144" width="394" height="31"/>
+                                                <rect key="frame" x="0.0" y="278.66666666666669" width="355" height="54.666666666666686"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds0-Xq-7pc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="0"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="0">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L67-oL-56s"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6Z-AJ-kfu">
-                                                        <rect key="frame" x="101" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="."/>
+                                                        <buttonConfiguration key="configuration" style="filled" title=".">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ8-Sr-tcR">
-                                                        <rect key="frame" x="202" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="9"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="--">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ur3-4k-pXG">
-                                                        <rect key="frame" x="303" y="0.0" width="91" height="31"/>
+                                                        <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="="/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="=">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -188,13 +222,16 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="4cK-Ax-eWw"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="50" id="51I-CF-hLG"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="50" id="Jyr-le-eQV"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="MTQ-gN-eFB"/>
                                     <constraint firstAttribute="trailing" secondItem="Yft-pP-Mbn" secondAttribute="trailing" constant="10" id="NST-lz-vj1"/>
+                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="Qgp-Ek-d7n"/>
                                     <constraint firstItem="Yft-pP-Mbn" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="Yr5-hc-Yde"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="bqw-uS-5sN"/>
+                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="hvF-7g-zyl"/>
                                     <constraint firstAttribute="trailing" secondItem="LVX-Mx-eu6" secondAttribute="trailing" constant="10" id="pXj-tk-bTA"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" id="qhf-1T-D68"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -213,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+            <point key="canvasLocation" x="130.40000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
