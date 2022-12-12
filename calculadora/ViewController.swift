@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let formatter = NumberFormatter()
         let locale = Locale.current
         formatter.groupingSeparator = ""
-        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.decimalSeparator = "."
         formatter.numberStyle = .decimal
         formatter.maximumIntegerDigits = 30
         formatter.minimumFractionDigits = 0
