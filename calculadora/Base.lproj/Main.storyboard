@@ -4,7 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,6 +32,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="AC">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonClearColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonClearBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="clearCapturaLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11F-h1-ooZ"/>
@@ -45,6 +47,8 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="±">
                                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                    <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                                    <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="buttonPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEQ-Tz-uO9"/>
@@ -55,6 +59,8 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="÷">
                                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                    <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                                    <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="buttonDivisionOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkg-Es-fqd"/>
@@ -72,6 +78,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="7">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fM2-CE-S8L"/>
@@ -82,6 +90,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="8">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFq-iR-P6b"/>
@@ -92,6 +102,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="9">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icF-za-tAS"/>
@@ -102,6 +114,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="buttonMultiplicationOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdW-Qn-NoE"/>
@@ -116,10 +130,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="4">
-                                                            <backgroundConfiguration key="background" imageContentMode="center">
-                                                                <imageReference key="image" image="1.square.fill" catalog="system" symbolScale="large"/>
-                                                            </backgroundConfiguration>
+                                                            <backgroundConfiguration key="background"/>
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKr-ig-d7R"/>
@@ -130,6 +144,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="5">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUZ-hf-g6n"/>
@@ -140,6 +156,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="6">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e15-Vb-wu2"/>
@@ -150,6 +168,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="-">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="buttonMinusOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukb-CI-wbv"/>
@@ -165,6 +185,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="1">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9x-f3-hAt"/>
@@ -175,6 +197,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="2">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcV-bY-UZG"/>
@@ -185,6 +209,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="3">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QL-5Q-zyw"/>
@@ -195,6 +221,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="+">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="buttonPlusOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv9-gJ-RnU"/>
@@ -210,6 +238,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="0">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L67-oL-56s"/>
@@ -220,6 +250,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title=".">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RTu-PR-I0p"/>
@@ -228,7 +260,10 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ8-Sr-tcR">
                                                         <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="⌫"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="⌫">
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberColor"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberBackground"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="deleteLastCharacter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHG-i2-JMT"/>
                                                         </connections>
@@ -238,6 +273,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="=">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" name="CalcButtonNumberBackground"/>
+                                                            <color key="baseBackgroundColor" name="CalcButtonNumberColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="buttonEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPn-Bs-f4r"/>
@@ -282,7 +319,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="ConteinerBackground"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="4cK-Ax-eWw"/>
                                     <constraint firstItem="xf1-TT-dCf" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="CRU-Fs-D81"/>
@@ -318,7 +355,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.square.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="CalcButtonClearBackground">
+            <color red="0.99791258569999997" green="0.36934211849999998" blue="0.34200608729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CalcButtonClearColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CalcButtonNumberBackground">
+            <color red="0.8380066156" green="0.89152985809999996" blue="0.99866610769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CalcButtonNumberColor">
+            <color red="0.0003237360797" green="0.1035976633" blue="0.24248245360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ConteinerBackground">
+            <color red="0.99299997091293335" green="0.98299998044967651" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
