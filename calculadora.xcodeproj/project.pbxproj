@@ -13,7 +13,6 @@
 		AA7AF2E0293D3E2700EDBB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7AF2DE293D3E2700EDBB16 /* Main.storyboard */; };
 		AA7AF2E2293D3E2800EDBB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7AF2E1293D3E2800EDBB16 /* Assets.xcassets */; };
 		AA7AF2E5293D3E2800EDBB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7AF2E3293D3E2800EDBB16 /* LaunchScreen.storyboard */; };
-		AA7AF30F293D894A00EDBB16 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */; };
 		AA96CB172946A0E100F37021 /* EnumOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96CB162946A0E100F37021 /* EnumOperation.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		AA7AF2E1293D3E2800EDBB16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7AF2E4293D3E2800EDBB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7AF2E6293D3E2800EDBB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		AA96CB162946A0E100F37021 /* EnumOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +66,6 @@
 				AA7AF2E1293D3E2800EDBB16 /* Assets.xcassets */,
 				AA7AF2E3293D3E2800EDBB16 /* LaunchScreen.storyboard */,
 				AA7AF2E6293D3E2800EDBB16 /* Info.plist */,
-				AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */,
 			);
 			path = calculadora;
 			sourceTree = "<group>";
@@ -153,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7AF2DD293D3E2700EDBB16 /* ViewController.swift in Sources */,
-				AA7AF30F293D894A00EDBB16 /* UIButtonExtension.swift in Sources */,
 				AA7AF2D9293D3E2700EDBB16 /* AppDelegate.swift in Sources */,
 				AA7AF2DB293D3E2700EDBB16 /* SceneDelegate.swift in Sources */,
 				AA96CB172946A0E100F37021 /* EnumOperation.swift in Sources */,
@@ -306,6 +302,8 @@
 				DEVELOPMENT_TEAM = 85S3825H5J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculadora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculadora;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,6 +335,8 @@
 				DEVELOPMENT_TEAM = 85S3825H5J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculadora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculadora;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
