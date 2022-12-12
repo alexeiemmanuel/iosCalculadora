@@ -37,7 +37,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="54.666666666666664"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-OO-KRC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="54.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="AC">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
@@ -46,12 +46,32 @@
                                                             <action selector="clearCapturaLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11F-h1-ooZ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-qK-L8X">
-                                                        <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="54.666666666666664"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-dY-D20">
+                                                        <rect key="frame" x="90.666666666666686" y="0.0" width="83" height="54.666666666666664"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="±">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEQ-Tz-uO9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-3a-7oX">
+                                                        <rect key="frame" x="181.66666666666666" y="0.0" width="82.666666666666657" height="54.666666666666664"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="%">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-qK-L8X">
+                                                        <rect key="frame" x="272.33333333333331" y="0.0" width="82.666666666666686" height="54.666666666666664"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="÷">
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonDivisionOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkg-Es-fqd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -94,6 +114,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonMultiplicationOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdW-Qn-NoE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -139,6 +162,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="-">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonMinusOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukb-CI-wbv"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -181,6 +207,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="+">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonPlusOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv9-gJ-RnU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -221,6 +250,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="=">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPn-Bs-f4r"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

@@ -14,6 +14,7 @@
 		AA7AF2E2293D3E2800EDBB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7AF2E1293D3E2800EDBB16 /* Assets.xcassets */; };
 		AA7AF2E5293D3E2800EDBB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7AF2E3293D3E2800EDBB16 /* LaunchScreen.storyboard */; };
 		AA7AF30F293D894A00EDBB16 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */; };
+		AA96CB172946A0E100F37021 /* EnumOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96CB162946A0E100F37021 /* EnumOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AA7AF2E4293D3E2800EDBB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7AF2E6293D3E2800EDBB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		AA96CB162946A0E100F37021 /* EnumOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		AA7AF2D7293D3E2700EDBB16 /* calculadora */ = {
 			isa = PBXGroup;
 			children = (
+				AA96CB152946A0AD00F37021 /* Utils */,
 				AA7AF2D8293D3E2700EDBB16 /* AppDelegate.swift */,
 				AA7AF2DA293D3E2700EDBB16 /* SceneDelegate.swift */,
 				AA7AF2DC293D3E2700EDBB16 /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				AA7AF30E293D894A00EDBB16 /* UIButtonExtension.swift */,
 			);
 			path = calculadora;
+			sourceTree = "<group>";
+		};
+		AA96CB152946A0AD00F37021 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA96CB162946A0E100F37021 /* EnumOperation.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				AA7AF30F293D894A00EDBB16 /* UIButtonExtension.swift in Sources */,
 				AA7AF2D9293D3E2700EDBB16 /* AppDelegate.swift in Sources */,
 				AA7AF2DB293D3E2700EDBB16 /* SceneDelegate.swift in Sources */,
+				AA96CB172946A0E100F37021 /* EnumOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
