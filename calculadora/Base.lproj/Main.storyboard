@@ -21,15 +21,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpk-Un-SMK" userLabel="Contenedor">
                                 <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
-                                        <rect key="frame" x="10" y="50" width="355" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="SIQ-3f-keI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-pP-Mbn" userLabel="Botones Stack View">
                                         <rect key="frame" x="10" y="347.66666666666674" width="355" height="333.33333333333326"/>
                                         <subviews>
@@ -258,14 +249,33 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculadora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-MP-uyG">
+                                        <rect key="frame" x="115.33333333333333" y="19.999999999999996" width="144.66666666666669" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-Mx-eu6" userLabel="LabelResultado">
+                                        <rect key="frame" x="10" y="73.666666666666671" width="355" height="100.00000000000001"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="SIQ-3f-keI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="4cK-Ax-eWw"/>
-                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="50" id="Jyr-le-eQV"/>
+                                    <constraint firstItem="bjJ-MP-uyG" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="DGZ-99-FN3"/>
+                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="top" secondItem="bjJ-MP-uyG" secondAttribute="bottom" constant="20" id="GwA-aJ-EQV"/>
+                                    <constraint firstItem="bjJ-MP-uyG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cpk-Un-SMK" secondAttribute="leading" id="LJU-o5-BUS"/>
                                     <constraint firstAttribute="trailing" secondItem="Yft-pP-Mbn" secondAttribute="trailing" constant="10" id="NST-lz-vj1"/>
-                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="OGL-Jg-Hd2"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bjJ-MP-uyG" secondAttribute="trailing" id="Nbq-Wl-45M"/>
+                                    <constraint firstItem="LVX-Mx-eu6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cpk-Un-SMK" secondAttribute="leading" id="OGL-Jg-Hd2"/>
                                     <constraint firstItem="LVX-Mx-eu6" firstAttribute="centerX" secondItem="Cpk-Un-SMK" secondAttribute="centerX" id="Qgp-Ek-d7n"/>
+                                    <constraint firstItem="bjJ-MP-uyG" firstAttribute="top" secondItem="Cpk-Un-SMK" secondAttribute="top" constant="20" id="WrT-Gb-Jem"/>
                                     <constraint firstItem="Yft-pP-Mbn" firstAttribute="leading" secondItem="Cpk-Un-SMK" secondAttribute="leading" constant="10" id="Yr5-hc-Yde"/>
                                     <constraint firstAttribute="bottom" secondItem="Yft-pP-Mbn" secondAttribute="bottom" constant="50" id="bqw-uS-5sN"/>
                                     <constraint firstAttribute="trailing" secondItem="LVX-Mx-eu6" secondAttribute="trailing" constant="10" id="jYY-2E-QVv"/>
