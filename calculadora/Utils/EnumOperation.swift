@@ -15,5 +15,4 @@ enum EnumOperation {
     case RESTA
     case DIVISION
     case MULTIPLICACION
-    case RESIDUO
 }

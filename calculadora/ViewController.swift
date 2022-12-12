@@ -39,6 +39,10 @@ class ViewController: UIViewController {
     // UILabel para mostrar los números tecleados o el resultado de una operación
     @IBOutlet var capturaLabel: UILabel!
     
+    // UILabel para mostrar mensaje de error
+    @IBOutlet var errorLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,7 +67,12 @@ class ViewController: UIViewController {
     /// - Parameter sender: Button que activa el evento y que lee el número asignado o el punto decimal.
     @IBAction func pressNumberButton(_ sender: UIButton) {
         let value = sender.titleLabel?.text
-                
+        
+        // Quitamos los mensajes de Error
+        if (self.errorLabel.text!.count > 0){
+            self.errorLabel.text = ""
+        }
+        
         if (self.capturaLabel.text?.first == "0"){
             self.capturaLabel.text = ""
         }
@@ -84,6 +93,7 @@ class ViewController: UIViewController {
     /// - Parameter sender: Botton AC
     @IBAction func clearCapturaLabel(_ sender: UIButton) {
         self.capturaLabel.text = self.ZERO
+        self.errorLabel.text = ""
         self.operacion = .SIN_OPERACION
         self.total = 0
     }
@@ -145,15 +155,12 @@ class ViewController: UIViewController {
             
             let valor = self.toDouble(inputString: dataCapture!)!
             if(valor == 0){
-                self.capturaLabel.text = self.DIVISION_ZERO
+                self.errorLabel.text = self.DIVISION_ZERO
+                self.total = 0
             } else{
                 self.total = self.total / valor
                 self.capturaLabel.text = self.total.formatted()
             }
-            
-            break
-        case .RESIDUO:
-            self.total = self.total / self.toDouble(inputString: dataCapture!)!
             
             break
         }
