@@ -1,4 +1,4 @@
-**`Diplomado Desarrollo de Aplicaciones para Dispositivos Móviles - Modulo 4`**
+**`Diplomado Desarrollo de Aplicaciones para Dispositivos Móviles - Modulo 5`**
 ===========
 
 ## Alexei E. Martínez Mendoza
